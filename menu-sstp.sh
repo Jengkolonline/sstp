@@ -33,15 +33,15 @@ echo -e " [\e[36m•1\e[0m] Create Account SSTP "
 #echo -e " [\e[36m•2\e[0m] Trial Account XRAY Vless "
 echo -e " [\e[36m•2\e[0m] Extending Account SSTP "
 echo -e " [\e[36m•3\e[0m] Delete Account SSTP "
-#echo -e " [\e[36m•5\e[0m] Check User Login XRAY Vless "
+echo -e " [\e[36m•4\e[0m] Check User Login SSTP "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[0;100;33m       • SSTP Install •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " [\e[36m•4\e[0m] Install SSTP "
-echo -e " [\e[36m•5\e[0m] Stop SSTP "
-echo -e " [\e[36m•5\e[0m] Start SSTP "
+echo -e " [\e[36m•5\e[0m] Install SSTP "
+echo -e " [\e[36m•6\e[0m] Stop SSTP "
+echo -e " [\e[36m•7\e[0m] Start SSTP "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -57,9 +57,10 @@ case $opt in
 1) clear ; addsstp ; exit ;;
 2) clear ; renewsstp ; exit ;;
 3) clear ; delsstp ; exit ;;
-4) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
-5) systemctl stop wg-quick@wg0.service ; exit ;;
-6) systemctl start wg-quick@wg0.service ; exit ;;
+4) clear ; ceksstp ; exit ;;
+5) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
+6) systemctl stop wg-quick@wg0.service ; exit ;;
+7) systemctl start wg-quick@wg0.service ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
