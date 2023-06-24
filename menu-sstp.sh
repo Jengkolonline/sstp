@@ -58,7 +58,7 @@ case $opt in
 2) clear ; renewsstp ; exit ;;
 3) clear ; delsstp ; exit ;;
 4) clear ; ceksstp ; exit ;;
-5) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
+5) wget https://raw.githubusercontent.com/Jengkolonline/sstp/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh ; exit ;;
 6) systemctl stop wg-quick@wg0.service ; exit ;;
 7) systemctl start wg-quick@wg0.service ; exit ;;
 0) clear ; menu ; exit ;;
