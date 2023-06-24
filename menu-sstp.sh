@@ -59,8 +59,8 @@ case $opt in
 3) clear ; delsstp ; exit ;;
 4) clear ; ceksstp ; exit ;;
 5) wget https://raw.githubusercontent.com/Jengkolonline/sstp/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh ; exit ;;
-6) systemctl stop wg-quick@wg0.service ; exit ;;
-7) systemctl start wg-quick@wg0.service ; exit ;;
+6) systemctl stop accel-ppp ; exit ;;
+7) systemctl start accel-ppp ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
