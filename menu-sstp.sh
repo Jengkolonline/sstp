@@ -40,8 +40,8 @@ echo -e "\E[0;100;33m       • SSTP Install •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " [\e[36m•5\e[0m] Install SSTP "
-echo -e " [\e[36m•6\e[0m] Stop SSTP "
-echo -e " [\e[36m•7\e[0m] Start SSTP "
+#echo -e " [\e[36m•6\e[0m] Stop SSTP "
+#echo -e " [\e[36m•7\e[0m] Start SSTP "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -58,9 +58,9 @@ case $opt in
 2) clear ; renewsstp ; exit ;;
 3) clear ; delsstp ; exit ;;
 4) clear ; ceksstp ; exit ;;
-5) wget https://raw.githubusercontent.com/Jengkolonline/sstp/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh ; exit ;;
-6) systemctl stop accel-ppp ; exit ;;
-7) systemctl start accel-ppp ; exit ;;
+5) clear ; wget https://raw.githubusercontent.com/Jengkolonline/sstp/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh ; exit ;;
+#6) systemctl stop accel-ppp ; exit ;;
+#7) systemctl start accel-ppp ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
