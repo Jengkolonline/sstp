@@ -39,7 +39,7 @@ checking_sc
 clear
 echo "Checking VPS"
 clear
-source /var/lib/bzstorevpn/ipvps.conf
+source /var/lib/SIJA/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
